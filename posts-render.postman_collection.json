@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "e63ebc80-dcf4-4599-8006-cd552a09b9ba",
+		"name": "posts-render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32099388"
+	},
+	"item": [
+		{
+			"name": "get all posts",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create a new post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"title\": \"sad day\",\n            \"author\": \"GG\",\n            \"category\": \"life\",\n            \"content\": \"1231231\",\n\n            \"image\": \"https://www.pexels.com/photo/close-up-photograph-of-flowers-931177/\",\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://node-post-list-express-1.onrender.com/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "patch a post",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"XXX\",\n    \"author\": \"GG\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://node-post-list-express-1.onrender.com/posts/dsff"
+			},
+			"response": []
+		},
+		{
+			"name": "delete a post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://node-post-list-express-1.onrender.com/posts/sdfsdf"
+			},
+			"response": []
+		},
+		{
+			"name": "delete all posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://node-post-list-express-1.onrender.com/posts"
+			},
+			"response": []
+		}
+	]
+}
